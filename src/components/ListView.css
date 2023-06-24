@@ -17,15 +17,17 @@
 
 input{
     width: 18rem;
-    /* height: 30px; */
-    border-radius: 15px;
+    height: 25px;
+    border-radius: 10px;
     border: none;
     padding: 5px;
     margin: 0 10px;
     padding-left: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: large;
 }
 input:focus{
-    /* border: 2px dotted #eb690d; */
+    outline: 2px solid #eb690d;
 }
 button{
     width: 8rem;
@@ -34,10 +36,10 @@ button{
     border: none;
     padding: 5px;
     margin: 0 10px;
-    background-color: #f7a648;
+    background-color: hsl(32, 85%, 64%);
 }
 button:hover{
-    background-color: #eb690d;
+    background-color: hsl(32, 90%, 55%);
     cursor: pointer;
 }
 

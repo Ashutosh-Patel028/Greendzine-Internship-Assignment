@@ -7,7 +7,9 @@ function Card(props){
     return (
         <div className='card-container'>
             <div className='card-main' id={id}>
-                <img src={avatar}/>
+                <div className='Img-Div'>
+                    <img src={avatar} alt="avatar"/>
+                </div>
             </div>
             <p>{firstName}</p>
         </div>
