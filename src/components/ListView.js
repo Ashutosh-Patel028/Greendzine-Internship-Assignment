@@ -19,22 +19,19 @@ function ListView(){
     async function make_API_Call(apiURL){
         const response=await fetch(apiURL);
         const jsonDATA=await response.json();
-        // console.log(jsonDATA);
         setData(jsonDATA.data);
         setFilteredData(jsonDATA.data);
     }
     useEffect(()=>{
         make_API_Call(apiURL)
-    });
+    },[apiURL]);
 
-    // console.log(searchText);
     return (
         <div className="container">
             <div className="search-container">
                 <input type="text" placeholder="type to search" onChange={e=>setSearchText(e.target.value)}/>
                 <button onClick={()=>{
                     const result=searchData(searchText,data);
-                    console.log(result);
                     setFilteredData(result);
                 }}>Search</button>
             </div>
