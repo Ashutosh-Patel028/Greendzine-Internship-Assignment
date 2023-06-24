@@ -1,0 +1,34 @@
+.card-container{
+    width: 150px;
+    /* height: 200px; */
+    border:2px solid black;
+    border-radius: 15px;
+    position: relative;
+}
+
+.card-container::after{
+    content: attr(id);
+    position: absolute;
+    top: -5%;
+    right: -10%;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    /* width: 100%; */
+    /* height: 100%; */
+    border-radius: 15px;
+    margin: 2px;
+    padding: 5px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
