@@ -1,4 +1,4 @@
-.card-container{
+.card-main{
     width: 150px;
     /* height: 200px; */
     border:2px solid black;
@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.card-container::after{
+.card-main::after{
     content: attr(id);
     position: absolute;
     top: -5%;
@@ -31,4 +31,9 @@ img{
     overflow: hidden;
     aspect-ratio: 16/9;
     object-fit: cover;
+}
+
+p{
+    text-align: center;
+    font-size: large;
 }
