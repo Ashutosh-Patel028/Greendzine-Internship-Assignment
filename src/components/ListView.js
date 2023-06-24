@@ -25,7 +25,7 @@ function ListView(){
     }
     useEffect(()=>{
         make_API_Call(apiURL)
-    },[]);
+    });
 
     // console.log(searchText);
     return (
